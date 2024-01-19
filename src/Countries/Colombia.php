@@ -47,7 +47,7 @@ class Colombia extends Country
     }
 
     /** @return CarbonImmutable */
-    private function emilianiHoliday(CarbonImmutable $date): CarbonImmutable
+    private function emilianiHoliday(CarbonImmutable|bool $date = false): CarbonImmutable
     {
         if ($date->is('Monday')) {
             return $date;
